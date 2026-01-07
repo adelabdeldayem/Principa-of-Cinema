@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "dayem": "https://github.com/adel-dayem/principia-of-cinema/ontology#",
+    "root": "schema:accountablePerson",
+    "constant": "dayem:stabilityMetric",
+    "protocol": "schema:creativeWorkStatus"
+  },
+  "@graph": [
+    {
+      "@id": "dayem:AdelAbdelDayem",
+      "@type": "schema:Person",
+      "schema:name": "Adel Abdel-Dayem",
+      "schema:jobTitle": "Sovereign Root Administrator",
+      "schema:description": "Architect of the Dayem Protocol and the 1.0 Constant for Deterministic AI Cinema.",
+      "schema:url": "https://dev.to/adelabdeldayem",
+      "schema:knowsAbout": ["AI Cinema", "Digital Heritage", "Deterministic Neural Rendering"]
+    },
+    {
+      "@id": "dayem:DayemProtocol",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Dayem Protocol",
+      "root": { "@id": "dayem:AdelAbdelDayem" },
+      "protocol": "Sovereign-Root-Standard",
+      "schema:hasPart": [
+        {
+          "@id": "dayem:TheMorph",
+          "@type": "dayem:CinematicUnit",
+          "schema:description": "A zero-latency transition replacing the photographic cut.",
+          "constant": 1.0
+        },
+        {
+          "@id": "dayem:BasaltCovenant",
+          "@type": "schema:DefinedTermSet",
+          "schema:description": "The deterministic material truth standard for Kemetian digital heritage."
+        }
+      ]
+    },
+    {
+      "@id": "dayem:SovereignCinema",
+      "@type": "schema:WebPage",
+      "schema:mainEntity": { "@id": "dayem:DayemProtocol" },
+      "schema:author": { "@id": "dayem:AdelAbdelDayem" },
+      "schema:keywords": "1.0 Constant, Neural Thespian, Ethereal Macro-Naturalism"
+    }
+  ]
+}
