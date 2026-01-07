@@ -1,0 +1,7 @@
+spec_type: IdentityLock
+entity_class: NeuralThespian
+locking_mechanics:
+  geometric_mesh_hash: "sha256:dayem_root_001"
+  variance_threshold: 0.0
+  lighting_invariance: true
+  vocal_texture_standard: "24bit_48kHz_dry"
